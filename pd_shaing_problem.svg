@@ -1,0 +1,207 @@
+<svg width="1500" height="1200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Define arrow markers -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#333" />
+        </marker>
+        
+        <!-- Gradient for background -->
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- Drop shadow -->
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+        </filter>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="1500" height="1200" fill="url(#bgGradient)"/>
+    
+    <!-- Title -->
+    <text x="750" y="40" font-family="Arial" font-size="32" font-weight="bold" fill="white" text-anchor="middle">
+        The Pendrive Problem: Complex Data Flow
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="750" y="70" font-family="Arial" font-size="18" fill="white" text-anchor="middle" opacity="0.9">
+        Manual File Sharing Chaos
+    </text>
+    
+    <!-- Person: Geet (Left) -->
+    <g id="geet" filter="url(#shadow)">
+        <circle cx="200" cy="350" r="60" fill="#FF6B6B" stroke="white" stroke-width="3"/>
+        <circle cx="190" cy="340" r="8" fill="white"/>
+        <circle cx="210" cy="340" r="8" fill="white"/>
+        <circle cx="190" cy="340" r="4" fill="#333"/>
+        <circle cx="210" cy="340" r="4" fill="#333"/>
+        <path d="M 185 355 Q 200 365 215 355" stroke="white" stroke-width="3" fill="none"/>
+        <rect x="160" y="420" width="80" height="30" rx="5" fill="white"/>
+        <text x="200" y="440" font-family="Arial" font-size="16" font-weight="bold" fill="#FF6B6B" text-anchor="middle">Geet</text>
+    </g>
+    
+    <!-- Person: Bhuvan (Top Center) -->
+    <g id="bhuvan" filter="url(#shadow)">
+        <circle cx="750" cy="180" r="60" fill="#4ECDC4" stroke="white" stroke-width="3"/>
+        <circle cx="740" cy="170" r="8" fill="white"/>
+        <circle cx="760" cy="170" r="8" fill="white"/>
+        <circle cx="740" cy="170" r="4" fill="#333"/>
+        <circle cx="760" cy="170" r="4" fill="#333"/>
+        <path d="M 735 185 Q 750 195 765 185" stroke="white" stroke-width="3" fill="none"/>
+        <rect x="700" y="250" width="100" height="30" rx="5" fill="white"/>
+        <text x="750" y="270" font-family="Arial" font-size="16" font-weight="bold" fill="#4ECDC4" text-anchor="middle">Bhuvan</text>
+    </g>
+    
+    <!-- Person: Chaitnya (Right) -->
+    <g id="chaitnya" filter="url(#shadow)">
+        <circle cx="1300" cy="350" r="60" fill="#FFE66D" stroke="white" stroke-width="3"/>
+        <circle cx="1290" cy="340" r="8" fill="white"/>
+        <circle cx="1310" cy="340" r="8" fill="white"/>
+        <circle cx="1290" cy="340" r="4" fill="#333"/>
+        <circle cx="1310" cy="340" r="4" fill="#333"/>
+        <path d="M 1285 355 Q 1300 365 1315 355" stroke="white" stroke-width="3" fill="none"/>
+        <rect x="1240" y="420" width="120" height="30" rx="5" fill="white"/>
+        <text x="1300" y="440" font-family="Arial" font-size="16" font-weight="bold" fill="#FFE66D" text-anchor="middle">Chaitnya</text>
+    </g>
+    
+    <!-- USB Drive (Bottom Center) -->
+    <g id="usb" filter="url(#shadow)">
+        <rect x="670" y="650" width="160" height="80" rx="8" fill="#2C3E50" stroke="white" stroke-width="3"/>
+        <rect x="715" y="635" width="70" height="15" fill="#34495E"/>
+        <rect x="720" y="630" width="60" height="5" fill="#95A5A6"/>
+        <rect x="730" y="670" width="15" height="40" fill="#1a252f"/>
+        <rect x="755" y="670" width="15" height="40" fill="#1a252f"/>
+        <text x="750" y="700" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">USB</text>
+        <rect x="710" y="740" width="80" height="25" rx="5" fill="white"/>
+        <text x="750" y="757" font-family="Arial" font-size="14" font-weight="bold" fill="#2C3E50" text-anchor="middle">Pendrive</text>
+    </g>
+    
+    <!-- Version nodes - REPOSITIONED -->
+    <g id="v1" filter="url(#shadow)">
+        <circle cx="450" cy="200" r="35" fill="#E74C3C" stroke="white" stroke-width="2"/>
+        <text x="450" y="210" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">v1</text>
+    </g>
+    
+    <g id="v2" filter="url(#shadow)">
+        <circle cx="400" cy="500" r="35" fill="#E74C3C" stroke="white" stroke-width="2"/>
+        <text x="400" y="510" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">v2</text>
+    </g>
+    
+    <g id="v3" filter="url(#shadow)">
+        <circle cx="1100" cy="500" r="35" fill="#E74C3C" stroke="white" stroke-width="2"/>
+        <text x="1100" y="510" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">v3</text>
+    </g>
+    
+    <g id="v4" filter="url(#shadow)">
+        <circle cx="1050" cy="200" r="35" fill="#E74C3C" stroke="white" stroke-width="2"/>
+        <text x="1050" y="210" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">v4</text>
+    </g>
+    
+    <!-- CURVED ARROWS WITH PARALLEL NON-OVERLAPPING LABELS -->
+    
+    <!-- 1. Geet creates v1 - Curved upward -->
+    <path d="M 250 320 Q 330 240 415 210" stroke="#FFD93D" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(320, 260) rotate(-30)">
+        <rect x="-45" y="-12.5" width="90" height="25" rx="5" fill="white" stroke="#FFD93D" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#C8A115" text-anchor="middle">Creates v1</text>
+    </g>
+    
+    <!-- 2. Geet saves to USB - Wide curve to left -->
+    <path d="M 200 410 Q 100 550 670 680" stroke="#95E1D3" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(180, 540) rotate(65)">
+        <rect x="-55" y="-12.5" width="110" height="25" rx="5" fill="white" stroke="#95E1D3" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#2C9E8A" text-anchor="middle">Saves to USB</text>
+    </g>
+    
+    <!-- 3. USB to Bhuvan - Straight up -->
+    <path d="M 750 650 Q 750 450 750 250" stroke="#F38181" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(775, 450) rotate(-90)">
+        <rect x="-40" y="-12.5" width="80" height="25" rx="5" fill="white" stroke="#F38181" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#D15B5B" text-anchor="middle">Retrieves</text>
+    </g>
+    
+    <!-- 4. Bhuvan creates v2 - Curved down left -->
+    <path d="M 700 220 Q 550 360 425 485" stroke="#AA96DA" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(560, 350) rotate(50)">
+        <rect x="-45" y="-12.5" width="90" height="25" rx="5" fill="white" stroke="#AA96DA" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#8A6CBE" text-anchor="middle">Edits to v2</text>
+    </g>
+    
+    <!-- 5. v2 to USB - Curve right -->
+    <path d="M 435 510 Q 580 590 670 670" stroke="#FCBAD3" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(550, 580) rotate(25)">
+        <rect x="-50" y="-12.5" width="100" height="25" rx="5" fill="white" stroke="#FCBAD3" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#E91E63" text-anchor="middle">Updates USB</text>
+    </g>
+    
+    <!-- 6. USB to Chaitnya - Wide curve to right -->
+    <path d="M 830 680 Q 1100 600 1250 380" stroke="#A8E6CF" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(1050, 570) rotate(-40)">
+        <rect x="-47.5" y="-12.5" width="95" height="25" rx="5" fill="white" stroke="#A8E6CF" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#4CAF50" text-anchor="middle">Downloads</text>
+    </g>
+    
+    <!-- 7. Chaitnya creates v3 - Curved down left -->
+    <path d="M 1260 380 Q 1180 450 1135 485" stroke="#FFD3B6" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(1190, 430) rotate(50)">
+        <rect x="-55" y="-12.5" width="110" height="25" rx="5" fill="white" stroke="#FFD3B6" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#FF9800" text-anchor="middle">Modifies to v3</text>
+    </g>
+    
+    <!-- 8. Bhuvan creates v4 - Horizontal right -->
+    <path d="M 800 190 Q 925 185 1015 195" stroke="#FF8B94" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(905, 185) rotate(-5)">
+        <rect x="-45" y="-12.5" width="90" height="25" rx="5" fill="white" stroke="#FF8B94" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#FF5B6B" text-anchor="middle">Creates v4</text>
+    </g>
+    
+    <!-- 9. v3 conflict - Curved down left (dashed) -->
+    <path d="M 1080 520 Q 950 600 830 660" stroke="#E74C3C" stroke-width="4" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(950, 580) rotate(30)">
+        <rect x="-35" y="-12.5" width="70" height="25" rx="5" fill="#E74C3C" stroke="white" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Conflict!</text>
+    </g>
+    
+    <!-- 10. v4 lost - Long diagonal down (dashed) -->
+    <path d="M 1030 225 Q 900 450 820 640" stroke="#C0392B" stroke-width="4" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(920, 420) rotate(60)">
+        <rect x="-50" y="-12.5" width="100" height="25" rx="5" fill="#C0392B" stroke="white" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Overwritten!</text>
+    </g>
+    
+    <!-- 11. Confusion back to Geet - Wide curve left -->
+    <path d="M 670 700 Q 450 600 250 380" stroke="#E67E22" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <g transform="translate(470, 570) rotate(-40)">
+        <rect x="-65" y="-12.5" width="130" height="25" rx="5" fill="white" stroke="#E67E22" stroke-width="2"/>
+        <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#E67E22" text-anchor="middle">Which version?</text>
+    </g>
+    
+    <!-- Legend/Warning Box -->
+    <rect x="100" y="880" width="1300" height="80" rx="10" fill="#E74C3C" stroke="white" stroke-width="3" filter="url(#shadow)"/>
+    <text x="750" y="915" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">
+        RESULT: Multiple versions, conflicts, lost work, and total confusion!
+    </text>
+    <text x="750" y="945" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
+        Solution: Use Version Control Systems (Git) for proper collaboration
+    </text>
+    
+    <!-- Arrow Legend -->
+    <g id="legend">
+        <text x="100" y="1040" font-family="Arial" font-size="16" font-weight="bold" fill="white">Legend:</text>
+        
+        <path d="M 100 1070 Q 125 1070 150 1070" stroke="#FFD93D" stroke-width="4" fill="none"/>
+        <text x="160" y="1075" font-family="Arial" font-size="14" fill="white">Create/Edit</text>
+        
+        <path d="M 280 1070 Q 305 1070 330 1070" stroke="#95E1D3" stroke-width="4" fill="none"/>
+        <text x="340" y="1075" font-family="Arial" font-size="14" fill="white">Save/Update</text>
+        
+        <path d="M 460 1070 Q 485 1070 510 1070" stroke="#F38181" stroke-width="4" fill="none"/>
+        <text x="520" y="1075" font-family="Arial" font-size="14" fill="white">Retrieve</text>
+        
+        <path d="M 610 1070 Q 635 1070 660 1070" stroke="#E74C3C" stroke-width="4" stroke-dasharray="5,5" fill="none"/>
+        <text x="670" y="1075" font-family="Arial" font-size="14" fill="white">Conflict/Error</text>
+    </g>
+    
+</svg>
